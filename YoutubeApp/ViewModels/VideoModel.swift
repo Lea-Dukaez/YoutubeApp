@@ -28,7 +28,7 @@ class VideoModel: ObservableObject {
         //Create a URL Request
         AF.request(
             url,
-            parameters: ["part": "snippet", "chart": "mostPopular", "maxResults": "10", "regionCode": "US", "key": Secret.API_KEY]
+            parameters: ["part": "snippet", "chart": "mostPopular", "maxResults": "10", "regionCode": "FR", "key": Secret.API_KEY]
         )
         .validate()
         .responseDecodable(of: Response.self, decoder: decoder) { response in

@@ -8,5 +8,6 @@
 import Foundation
 
 struct K {
-    static let API_URL = "https://www.googleapis.com/youtube/v3/"
+    static let API_URL = "https://youtube.googleapis.com/youtube/v3"
+    static let YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/"
 }

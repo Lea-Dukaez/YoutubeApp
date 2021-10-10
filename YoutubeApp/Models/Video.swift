@@ -28,6 +28,14 @@ struct Video: Decodable {
         
     }
     
+    init() {
+        self.videoId = "12345567890"
+        self.title = "What is Lorem Ipsum?"
+        self.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+        self.thumbnail = "https://i.ytimg.com/vi/U2SNwtE-0Us/hqdefault.jpg"
+        self.published = Date()
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
