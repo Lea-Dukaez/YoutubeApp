@@ -16,6 +16,9 @@
 		669CBEA1271331BA009AC09B /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEA0271331BA009AC09B /* Secret.swift */; };
 		669CBEA42713392C009AC09B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEA32713392C009AC09B /* Response.swift */; };
 		669CBEA627133958009AC09B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEA527133958009AC09B /* Video.swift */; };
+		669CBEA92713424C009AC09B /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEA82713424C009AC09B /* VideoModel.swift */; };
+		669CBEAB27134635009AC09B /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEAA27134635009AC09B /* VideoPreview.swift */; };
+		669CBEAD271347A3009AC09B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CBEAC271347A3009AC09B /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		669CBEA0271331BA009AC09B /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		669CBEA32713392C009AC09B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		669CBEA527133958009AC09B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		669CBEA82713424C009AC09B /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		669CBEAA27134635009AC09B /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+		669CBEAC271347A3009AC09B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		6E1D51B7B47F134D7805B674 /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F76668FC4CB68BAA3D279D /* Pods-YoutubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.release.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				669CBE8B2713240E009AC09B /* YoutubeAppApp.swift */,
+				669CBEA72713422D009AC09B /* ViewModels */,
 				669CBEA22713391B009AC09B /* Models */,
 				669CBE9927132BBC009AC09B /* Helpers */,
 				669CBE8D2713240E009AC09B /* ContentView.swift */,
@@ -97,6 +104,7 @@
 			children = (
 				669CBE9C27132BDF009AC09B /* Constants.swift */,
 				669CBEA0271331BA009AC09B /* Secret.swift */,
+				669CBEAC271347A3009AC09B /* CacheManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -108,6 +116,15 @@
 				669CBEA527133958009AC09B /* Video.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		669CBEA72713422D009AC09B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				669CBEA82713424C009AC09B /* VideoModel.swift */,
+				669CBEAA27134635009AC09B /* VideoPreview.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FA7D72DE07A7B2E4AB71FFE2 /* Pods */ = {
@@ -234,10 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				669CBE8E2713240E009AC09B /* ContentView.swift in Sources */,
+				669CBEAD271347A3009AC09B /* CacheManager.swift in Sources */,
 				669CBEA627133958009AC09B /* Video.swift in Sources */,
 				669CBEA1271331BA009AC09B /* Secret.swift in Sources */,
+				669CBEA92713424C009AC09B /* VideoModel.swift in Sources */,
 				669CBE8C2713240E009AC09B /* YoutubeAppApp.swift in Sources */,
 				669CBE9D27132BDF009AC09B /* Constants.swift in Sources */,
+				669CBEAB27134635009AC09B /* VideoPreview.swift in Sources */,
 				669CBEA42713392C009AC09B /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
